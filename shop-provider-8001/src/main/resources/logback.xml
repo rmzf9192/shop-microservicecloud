@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @see https://docs.spring.io/spring-boot/docs/current/reference/html/howto-logging.html -->
+<!-- @see http://logback.qos.ch/manual/appenders.html -->
+<!-- @see http://logback.qos.ch/manual/encoders.html -->
+<!-- @see spring-boot-x.y.z.RELEASE.jar!/org/springframework/boot/logging/logback/defaults.xml -->
+<configuration>
+
+  <!-- provides properties: CONSOLE_LOG_PATTERN, FILE_LOG_PATTERN -->
+  <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+  <!-- provides appender: CONSOLE -->
+  <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+  <!-- logging file prefix -->
+  <property name="LOG_FILE" value="shop-log/shop-log"/>
+
+  <!-- logging profile -->
+  <include resource="logback-dev.xml"/>
+
+</configuration>

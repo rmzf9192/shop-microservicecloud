@@ -1,0 +1,17 @@
+# https://docs.spring.io/spring-boot/docs/1.5.x/reference/html/common-application-properties.html
+# org.springframework.boot.context.config.ConfigFileApplicationListener.SpringProfiles
+spring.profiles:
+    active: dev   #（如果使用YAML或列表）的逗号分隔列表活性谱
+    include:     #无条件地激活指定的逗号分隔的配置文件（或使用YAML时的配置文件列表）。
+# org.springframework.boot.autoconfigure.jackson.JacksonProperties
+spring.jackson:
+  # com.fasterxml.jackson.databind.SerializationFeature
+  serialization.write-dates-as-timestamps: false
+  # com.fasterxml.jackson.databind.DeserializationFeature
+  deserialization.fail-on-unknown-properties: false
+
+# org.springframework.boot.autoconfigure.session.SessionProperties
+spring.session:
+  timeout: 1800 # seconds
+  store-type: redis
+  redis.namespace: 'shop-redis'

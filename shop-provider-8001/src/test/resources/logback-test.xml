@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @see https://docs.spring.io/spring-boot/docs/current/reference/html/howto-logging.html -->
+<!-- @see http://logback.qos.ch/manual/appenders.html -->
+<!-- @see http://logback.qos.ch/manual/encoders.html -->
+<configuration>
+
+  <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+  <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+  <logger name="com.el" level="DEBUG"/>
+
+  <root level="INFO">
+    <appender-ref ref="CONSOLE"/>
+  </root>
+
+</configuration>
