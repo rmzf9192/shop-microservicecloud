@@ -31,17 +31,17 @@ public class DeptServiceImpl implements DeptService {
 
     @Override
     public boolean add(Dept dept) {
-        return deptMapper.addDept(dept);
+        return deptDao.addDept(dept);
     }
 
     @Override
     public Dept get(Long id) {
-        return deptMapper.findById(id);
+        return deptDao.findById(id);
     }
 
     @Override
     public List<Dept> list() {
-        List<Dept> deptList = deptMapper.findAll();
+        List<Dept> deptList = deptDao.findAll();
         Integer [] str=new Integer[4];
         str[0]=1;
         str[1]=2;

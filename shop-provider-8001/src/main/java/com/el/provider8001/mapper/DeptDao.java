@@ -13,6 +13,7 @@ import java.util.List;
  * @Description:DeptDao
  */
 public interface DeptDao {
+
     @Insert("INSERT INTO dept(dname,db_source) VALUES(#{dname},DATABASE());")
     boolean addDept(Dept dept);
 

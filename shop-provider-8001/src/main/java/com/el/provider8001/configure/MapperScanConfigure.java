@@ -16,4 +16,5 @@ import org.springframework.context.annotation.Configuration;
         "com.el.provider8001.*.*.mapper",
 })
 public class MapperScanConfigure {
+
 }

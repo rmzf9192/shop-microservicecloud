@@ -9,8 +9,6 @@ server:
 #  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
 spring:
-  application:
-    name: shop-provider-dept
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver              # mysql驱动包
@@ -23,22 +21,10 @@ spring:
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
   redis:
-    host: 192.168.137.131
-#    timeout: 1000
+    host: 127.0.0.1
+    timeout: 1000
     port: 6379
-    database: 1
-eureka:
-  client: #客户端注册进eureka服务列表内
-    service-url:
-      defaultZone:  http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
-  instance:
-    instance-id: shop-provider-hystrix-dept-8001
-    prefer-ip-address: true  #访问路径可以显示IP地址
-info:
-  app.name: elitesland-cloud
-  company.name: www.baidu.com
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+
 #mybatis:
 #  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
 #  type-aliases-package: com.el.parent.entities    # 所有Entity别名类所在包
@@ -48,9 +34,9 @@ mybatis:
   type-aliases-package: com.el.parent.entities
   #mapper.xml所在位置
   mapper-locations: classpath*:com/el/provider8001/mapper/*.xml
-##  mapper-locations: com.el.provider8001.mapper
-###加之前访问路径：http://myzuul.com:8001/shop-provider-dept/dept/get/1
-#zuul: #加上后访问路径 :http://myzuul.com:8001/shop/shopdept/dept/get/1
+#  mapper-locations: com.el.provider8001.mapper
+
+#zuul:
 #  prefix: /shop
 #  ignored-patterns: "*"
 #  routes:

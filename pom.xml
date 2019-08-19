@@ -16,6 +16,8 @@
     <module>shop-eureka-7003</module>
     <module>shop-consumer-9001</module>
     <module>shop-provider-route</module>
+    <module>shop-provider</module>
+    <module>shop-common</module>
   </modules>
 
   <name>shop-microservicecloud</name>
@@ -190,7 +192,13 @@
         <artifactId>transport</artifactId>
         <version>6.4.0</version>
       </dependency>
-
+      <!-- https://mvnrepository.com/artifact/org.springframework/springloaded -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>springloaded</artifactId>
+        <version>1.2.8.RELEASE</version>
+        <scope>provided</scope>
+      </dependency>
       <!-- <dependency>
            <groupId>io.searchbox</groupId>
            <artifactId>jest</artifactId>

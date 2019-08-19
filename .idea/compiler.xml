@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shop-api" />
+        <module name="shop-common-domain" />
+        <module name="shop-common-utils" />
         <module name="shop-consumer-9001" />
         <module name="shop-eureka-7001" />
         <module name="shop-eureka-7002" />
