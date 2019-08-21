@@ -16,11 +16,11 @@ eureka:
 #加之前访问路径：http://myzuul.com:9527/shop-provider-dept/dept/get/1
 zuul:  #加上后访问路径 :http://myzuul.com:9527/elshop/mydept/dept/get/1
   #ignored-services: microservicecloud-dept
-#  prefix: /elshop
-#  ignored-services: "*"
-#  routes:
-#    mydept.serviceId: shop-provider-dept
-#    mydept.path: /mydept/**
+  prefix: /elshop
+  ignored-services: "*"
+  routes:
+    mydept.serviceId: shop-provider-dept
+    mydept.path: /mydept/**
 
 info:
   app.name: shop-microcloud
