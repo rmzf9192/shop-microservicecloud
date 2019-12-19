@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shop-consumer-9001" />
-        <module name="shop-provider-route" />
+        <module name="shop-common-domain" />
         <module name="shop-api" />
         <module name="shop-eureka-7003" />
         <module name="shop-eureka-7002" />
         <module name="shop-eureka-7001" />
-        <module name="shop-common-domain" />
+        <module name="shop-provider-route" />
         <module name="shop-provider-8001" />
         <module name="shop-common-utils" />
       </profile>

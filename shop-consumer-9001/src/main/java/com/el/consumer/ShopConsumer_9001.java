@@ -20,6 +20,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableHystrixDashboard
 public class ShopConsumer_9001 {
     public static void main(String[] args) {
+
         SpringApplication.run(ShopConsumer_9001.class,args);
     }
 }
